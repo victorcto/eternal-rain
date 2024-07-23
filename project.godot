@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Eternal Rain"
+run/main_scene="res://levels/world_1.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -18,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+
+[editor]
+
+movie_writer/movie_file="C:/Projects/Eternal Rain/demos/demo1.avi"
 
 [rendering]
 

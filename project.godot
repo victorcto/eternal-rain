@@ -19,10 +19,17 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/stretch/mode="viewport"
 
 [editor]
 
 movie_writer/movie_file="C:/Projects/Eternal Rain/demos/demo1.avi"
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="world"
+2d_physics/layer_3="enemis"
 
 [rendering]
 

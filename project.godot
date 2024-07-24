@@ -15,6 +15,10 @@ run/main_scene="res://levels/world_1.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogManager="*res://singletons/dialog_manager.gd"
+
 [display]
 
 window/size/viewport_width=640
@@ -24,6 +28,19 @@ window/stretch/mode="viewport"
 [editor]
 
 movie_writer/movie_file="C:/Projects/Eternal Rain/demos/demo1.avi"
+
+[input]
+
+Interaction={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":73,"key_label":0,"unicode":105,"echo":false,"script":null)
+]
+}
+advance_message={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":79,"key_label":0,"unicode":111,"echo":false,"script":null)
+]
+}
 
 [layer_names]
 

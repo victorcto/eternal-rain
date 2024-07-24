@@ -1,12 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://cgquhqbfya1vk"]
+[gd_scene load_steps=7 format=3 uid="uid://cgquhqbfya1vk"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_4qmvn"]
 [ext_resource type="Texture2D" uid="uid://cbyhj1o1ppgdd" path="res://assets/oak_woods_tileset.png" id="1_6fwwx"]
-[ext_resource type="Texture2D" uid="uid://cwmi4tmvql2tu" path="res://assets/character/maya/idle/sprite_idle0.png" id="1_lpwok"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
-[ext_resource type="Texture2D" uid="uid://i4dyb4xjoe76" path="res://assets/character/maya/idle/sprite_idle1.png" id="2_fj6ke"]
-[ext_resource type="Texture2D" uid="uid://duioopxtcowvr" path="res://assets/character/maya/idle/sprite_idle2.png" id="3_p3yq2"]
-[ext_resource type="Texture2D" uid="uid://d13vciivxg8yt" path="res://assets/character/maya/idle/sprite_idle3.png" id="4_anrl2"]
+[ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="3_1rl2x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fyjal"]
 texture = ExtResource("1_6fwwx")
@@ -22847,29 +22843,6 @@ physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_fyjal")
 sources/6 = SubResource("TileSetAtlasSource_dnxpp")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ftddy"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_lpwok")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_fj6ke")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_p3yq2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_anrl2")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_busjr"]
-radius = 8.0
-
 [node name="World-01" type="Node2D"]
 
 [node name="level" type="TileMap" parent="."]
@@ -22881,16 +22854,5 @@ layer_0/tile_data = PackedInt32Array(983043, 1245184, 15, 983044, 1245184, 15, 9
 layer_1/name = "furniture"
 layer_1/tile_data = PackedInt32Array()
 
-[node name="player" type="CharacterBody2D" parent="."]
-collision_mask = 3
-script = ExtResource("1_4qmvn")
-
-[node name="anim" type="AnimatedSprite2D" parent="player"]
-position = Vector2(68, 238)
-sprite_frames = SubResource("SpriteFrames_ftddy")
-animation = &"idle"
-frame_progress = 0.63219
-
-[node name="collision" type="CollisionShape2D" parent="player"]
-position = Vector2(64, 255)
-shape = SubResource("CapsuleShape2D_busjr")
+[node name="player" parent="." instance=ExtResource("3_1rl2x")]
+position = Vector2(34, 240)

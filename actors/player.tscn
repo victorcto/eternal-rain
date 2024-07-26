@@ -1,10 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://cojstxv1wf8g"]
+[gd_scene load_steps=16 format=3 uid="uid://cojstxv1wf8g"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p18b1"]
 [ext_resource type="Texture2D" uid="uid://cwmi4tmvql2tu" path="res://assets/character/maya/idle/sprite_idle0.png" id="2_oj40t"]
 [ext_resource type="Texture2D" uid="uid://i4dyb4xjoe76" path="res://assets/character/maya/idle/sprite_idle1.png" id="3_dqjh1"]
 [ext_resource type="Texture2D" uid="uid://duioopxtcowvr" path="res://assets/character/maya/idle/sprite_idle2.png" id="4_vmh0e"]
 [ext_resource type="Texture2D" uid="uid://d13vciivxg8yt" path="res://assets/character/maya/idle/sprite_idle3.png" id="5_f4jfe"]
+[ext_resource type="Texture2D" uid="uid://clwmod260oaoa" path="res://assets/character/maya/jump/sprite_jump-0.png" id="6_27mxx"]
+[ext_resource type="Texture2D" uid="uid://f1kidrmw64w8" path="res://assets/character/maya/run1/sprite_run-0.png" id="6_iyjqs"]
+[ext_resource type="Texture2D" uid="uid://h6n226f044ax" path="res://assets/character/maya/jump/sprite_jump-1.png" id="7_xcmri"]
+[ext_resource type="Texture2D" uid="uid://id4w7c018s15" path="res://assets/character/maya/run1/sprite_run-2.png" id="8_7an7m"]
+[ext_resource type="Texture2D" uid="uid://fhaoc25s5p33" path="res://assets/character/maya/run1/sprite_run-3.png" id="9_h1r5k"]
+[ext_resource type="Texture2D" uid="uid://ch2ymb24dp3nw" path="res://assets/character/maya/run1/sprite_run-4.png" id="10_keuno"]
+[ext_resource type="Texture2D" uid="uid://dcjohifhu81a2" path="res://assets/character/maya/run1/sprite_run-5.png" id="11_sl8wg"]
+[ext_resource type="Texture2D" uid="uid://cye1nf5hvr1o2" path="res://assets/character/maya/run1/sprite_run-6.png" id="12_cly7i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a58s0"]
 animations = [{
@@ -24,6 +32,40 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_27mxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xcmri")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_iyjqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7an7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h1r5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_keuno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sl8wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cly7i")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crblx"]
@@ -35,10 +77,10 @@ script = ExtResource("1_p18b1")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_a58s0")
-animation = &"idle"
+animation = &"jump"
 
 [node name="collision" type="CollisionShape2D" parent="."]
-position = Vector2(-4, 16)
+position = Vector2(0, 16)
 shape = SubResource("CapsuleShape2D_crblx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -46,3 +88,5 @@ limit_left = 0
 limit_top = 0
 limit_bottom = -10000000
 editor_draw_limits = true
+
+[node name="animator" type="AnimationPlayer" parent="."]

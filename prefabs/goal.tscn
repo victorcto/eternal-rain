@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbpq4txtknvup"]
+
+[ext_resource type="Script" path="res://scripts/goal.gd" id="1_dfcht"]
+[ext_resource type="Texture2D" uid="uid://dx8dgogalafgo" path="res://assets/furniture/Houses_-_reusable_game_assets-removebg-preview.png" id="1_rl6eq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lb5j7"]
+size = Vector2(37, 40)
+
+[node name="goal" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_dfcht")
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -21)
+scale = Vector2(0.541667, 0.541667)
+texture = ExtResource("1_rl6eq")
+region_enabled = true
+region_rect = Rect2(152, 212, 40, 72)
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -21)
+shape = SubResource("RectangleShape2D_lb5j7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cgquhqbfya1vk"]
+[gd_scene load_steps=19 format=3 uid="uid://cgquhqbfya1vk"]
 
 [ext_resource type="Texture2D" uid="uid://cbyhj1o1ppgdd" path="res://assets/oak_woods_tileset.png" id="1_6fwwx"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background/background_layer_3.png" id="7_fhjga"]
 [ext_resource type="PackedScene" path="res://prefabs/goal.tscn" id="8_c1t13"]
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="9_oj62v"]
+[ext_resource type="Script" path="res://scripts/scroll_area.gd" id="10_ebg1r"]
+[ext_resource type="Texture2D" uid="uid://b2qxap8388aaj" path="res://assets/ui/expression_alerted.png" id="11_8cthn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fyjal"]
 texture = ExtResource("1_6fwwx")
@@ -8751,6 +8753,9 @@ shader_parameter/base_rain_speed = 0.5
 shader_parameter/additional_rain_speed = 0.25
 shader_parameter/slant = 4.75e-08
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_232y4"]
+size = Vector2(39, 27)
+
 [node name="World-01" type="Node2D"]
 
 [node name="level" type="TileMap" parent="."]
@@ -8819,3 +8824,20 @@ offset_top = -42.0
 offset_right = 283.0
 offset_bottom = 264.0
 color = Color(1, 1, 1, 0)
+
+[node name="scroll_area" type="Area2D" parent="."]
+position = Vector2(172, 327)
+script = ExtResource("10_ebg1r")
+
+[node name="scroll_area_interaction" type="CollisionShape2D" parent="scroll_area"]
+position = Vector2(4.5, 3.5)
+shape = SubResource("RectangleShape2D_232y4")
+
+[node name="warning_icon" type="Sprite2D" parent="scroll_area"]
+visible = false
+position = Vector2(5, -13)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("11_8cthn")
+
+[connection signal="body_entered" from="scroll_area" to="scroll_area" method="_on_body_entered"]
+[connection signal="body_exited" from="scroll_area" to="scroll_area" method="_on_body_exited"]

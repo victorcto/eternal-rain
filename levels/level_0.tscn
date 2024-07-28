@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cgquhqbfya1vk"]
+[gd_scene load_steps=16 format=3 uid="uid://cgquhqbfya1vk"]
 
 [ext_resource type="Texture2D" uid="uid://cbyhj1o1ppgdd" path="res://assets/oak_woods_tileset.png" id="1_6fwwx"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
@@ -7,7 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background/background_layer_1.png" id="5_ddinc"]
 [ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background/background_layer_2.png" id="6_3fxcn"]
 [ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background/background_layer_3.png" id="7_fhjga"]
-[ext_resource type="PackedScene" uid="uid://dbpq4txtknvup" path="res://prefabs/goal.tscn" id="8_c1t13"]
+[ext_resource type="PackedScene" path="res://prefabs/goal.tscn" id="8_c1t13"]
+[ext_resource type="Shader" path="res://shaders/rain.gdshader" id="9_oj62v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fyjal"]
 texture = ExtResource("1_6fwwx")
@@ -8736,6 +8737,20 @@ texture = ExtResource("2_dk1bv")
 [sub_resource type="TileSet" id="TileSet_yqlvr"]
 sources/0 = SubResource("TileSetAtlasSource_qdh85")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m4m6r"]
+shader = ExtResource("9_oj62v")
+shader_parameter/rain_amount = 200.0
+shader_parameter/near_rain_length = 0.05
+shader_parameter/far_rain_length = 0.025
+shader_parameter/near_rain_width = 0.5
+shader_parameter/far_rain_width = 0.25
+shader_parameter/near_rain_transparency = 0.5
+shader_parameter/far_rain_transparency = 0.25
+shader_parameter/rain_color = Color(0.8, 0.8, 0.8, 0.490196)
+shader_parameter/base_rain_speed = 0.5
+shader_parameter/additional_rain_speed = 0.25
+shader_parameter/slant = 4.75e-08
+
 [node name="World-01" type="Node2D"]
 
 [node name="level" type="TileMap" parent="."]
@@ -8790,3 +8805,17 @@ motion_mirroring = Vector2(640, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("7_fhjga")
 centered = false
+
+[node name="rain" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_m4m6r")
+offset_left = 287.0
+offset_right = 1249.0
+offset_bottom = 343.0
+color = Color(1, 1, 1, 0)
+
+[node name="rain2" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_m4m6r")
+offset_top = -42.0
+offset_right = 283.0
+offset_bottom = 264.0
+color = Color(1, 1, 1, 0)

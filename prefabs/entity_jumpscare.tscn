@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbt2poh53l6jo"]
+[gd_scene load_steps=6 format=3 uid="uid://cktumaoln6puy"]
 
 [ext_resource type="Texture2D" uid="uid://56jf3iy0bug0" path="res://assets/character/entities/enemy_4_jumpscare.png" id="1_pj3rt"]
 [ext_resource type="AudioStream" uid="uid://dcm7a15w6dnav" path="res://assets/audio/scream_jumpscare.ogg" id="2_0ko7l"]

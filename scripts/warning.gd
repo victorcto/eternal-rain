@@ -5,7 +5,7 @@ extends Node2D
 
 const lines : Array[String] = [
 	"Bom dia Maya, o que vai querer hoje? \n - Ravi",
-	"Olá, Sr. Ravi. Não encotro meu pai. O senhor viu ele? \n - Maya",
+	"Olá, Sr. Ravi. Não encontro meu pai. O senhor viu ele? \n - Maya",
 	"Desculpa, não o vi... \n - Ravi"
 ]
 

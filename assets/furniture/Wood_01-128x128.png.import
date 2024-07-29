@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i6ck3j5eh84p"
-path="res://.godot/imported/sprite_jump0.png-79f9db2a0ce08ecfc64d85536f4c6e32.ctex"
+uid="uid://e5lcenurtuj4"
+path="res://.godot/imported/Wood_01-128x128.png-8190e3046bdb4cff5c42306c49f983e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/maya/jump/sprite_jump0.png"
-dest_files=["res://.godot/imported/sprite_jump0.png-79f9db2a0ce08ecfc64d85536f4c6e32.ctex"]
+source_file="res://assets/furniture/Wood_01-128x128.png"
+dest_files=["res://.godot/imported/Wood_01-128x128.png-8190e3046bdb4cff5c42306c49f983e7.ctex"]
 
 [params]
 

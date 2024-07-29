@@ -36,7 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://qlsxcbmlffxy" path="res://assets/title_screen/sprite_titlescrean31.png" id="33_6cg2r"]
 [ext_resource type="Texture2D" uid="uid://6atyc3dbmt8x" path="res://assets/title_screen/title/eternal_title-depositphotos-bgremover (2).png" id="35_1cr80"]
 [ext_resource type="Theme" uid="uid://burrrtpd8blug" path="res://themes/default_btn.tres" id="35_cg7ex"]
-[ext_resource type="AudioStream" uid="uid://bl7bxtdukeabk" path="res://sounds/rain.mp3" id="37_etda6"]
+[ext_resource type="AudioStream" uid="uid://bbvfophq34uy1" path="res://sounds/rainloop.mp3" id="37_b3vnh"]
 [ext_resource type="AudioStream" uid="uid://8g45cast1f3n" path="res://sounds/music.wav" id="38_c7x5j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vx4ox"]
@@ -268,7 +268,7 @@ theme = ExtResource("35_cg7ex")
 text = "QUIT GAME"
 
 [node name="bg_rain" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("37_etda6")
+stream = ExtResource("37_b3vnh")
 volume_db = 2.0
 autoplay = true
 

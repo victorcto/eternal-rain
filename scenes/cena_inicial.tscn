@@ -1,0 +1,298 @@
+[gd_scene load_steps=42 format=3 uid="uid://tm0lv0q3cxsd"]
+
+[ext_resource type="Script" path="res://scripts/cena_inicial.gd" id="1_yqrcu"]
+[ext_resource type="Texture2D" uid="uid://ctqnasyr1tfq" path="res://assets/title_screen/sprite_titlescrean25.png" id="2_qf4ha"]
+[ext_resource type="Script" path="res://scripts/Animatedbg.gd" id="3_xliop"]
+[ext_resource type="Texture2D" uid="uid://bxhrornm7jh6r" path="res://assets/title_screen/sprite_titlescrean00.png" id="4_6cmv0"]
+[ext_resource type="Texture2D" uid="uid://1u2fouqpf8eq" path="res://assets/title_screen/sprite_titlescrean01.png" id="5_754rk"]
+[ext_resource type="Texture2D" uid="uid://cg4u71c3jy8q2" path="res://assets/title_screen/sprite_titlescrean02.png" id="6_wdk44"]
+[ext_resource type="Texture2D" uid="uid://dpfqfa657iafl" path="res://assets/title_screen/sprite_titlescrean03.png" id="7_g0i2g"]
+[ext_resource type="Texture2D" uid="uid://deqgyajyw7wgu" path="res://assets/title_screen/sprite_titlescrean04.png" id="8_xnm86"]
+[ext_resource type="Texture2D" uid="uid://ctb4j3k0qy7br" path="res://assets/title_screen/sprite_titlescrean05.png" id="9_r0x2e"]
+[ext_resource type="Texture2D" uid="uid://clrg04con7yc7" path="res://assets/title_screen/sprite_titlescrean06.png" id="10_kh3qy"]
+[ext_resource type="Texture2D" uid="uid://178yw03feg34" path="res://assets/title_screen/sprite_titlescrean07.png" id="11_wqmbf"]
+[ext_resource type="Texture2D" uid="uid://dwphy18jfbx2g" path="res://assets/title_screen/sprite_titlescrean08.png" id="12_hcb7l"]
+[ext_resource type="Texture2D" uid="uid://d18wuom3520ye" path="res://assets/title_screen/sprite_titlescrean09.png" id="13_nq2br"]
+[ext_resource type="Texture2D" uid="uid://ufeo8dy7w1o" path="res://assets/title_screen/sprite_titlescrean10.png" id="14_hokst"]
+[ext_resource type="Texture2D" uid="uid://cm2yfnp2epni4" path="res://assets/title_screen/sprite_titlescrean11.png" id="15_4qqy5"]
+[ext_resource type="Texture2D" uid="uid://cdctiir72s1x2" path="res://assets/title_screen/sprite_titlescrean12.png" id="16_x1kq3"]
+[ext_resource type="Texture2D" uid="uid://dh21byv5tg4xt" path="res://assets/title_screen/sprite_titlescrean13.png" id="17_2edrv"]
+[ext_resource type="Texture2D" uid="uid://c4bn013uc127k" path="res://assets/title_screen/sprite_titlescrean14.png" id="18_l2wed"]
+[ext_resource type="Texture2D" uid="uid://byxy7hnlmy7de" path="res://assets/title_screen/sprite_titlescrean15.png" id="19_pu44n"]
+[ext_resource type="Texture2D" uid="uid://daamdhqerrjt2" path="res://assets/title_screen/sprite_titlescrean16.png" id="20_61mxm"]
+[ext_resource type="Texture2D" uid="uid://qt48cjl8lg2e" path="res://assets/title_screen/sprite_titlescrean17.png" id="21_28mvx"]
+[ext_resource type="Texture2D" uid="uid://c8jvmoiffqdni" path="res://assets/title_screen/sprite_titlescrean18.png" id="22_offek"]
+[ext_resource type="Texture2D" uid="uid://dxe5o26yde12m" path="res://assets/title_screen/sprite_titlescrean19.png" id="23_mwvke"]
+[ext_resource type="Texture2D" uid="uid://btcyotpi32154" path="res://assets/title_screen/sprite_titlescrean20.png" id="24_spymq"]
+[ext_resource type="Texture2D" uid="uid://dnbiqmi86hrvw" path="res://assets/title_screen/sprite_titlescrean21.png" id="25_uekar"]
+[ext_resource type="Texture2D" uid="uid://dnd1id5k6pi5c" path="res://assets/title_screen/sprite_titlescrean22.png" id="26_8df1i"]
+[ext_resource type="Texture2D" uid="uid://blnxu27ke5s8n" path="res://assets/title_screen/sprite_titlescrean23.png" id="27_412es"]
+[ext_resource type="Texture2D" uid="uid://dkqckbmlssiq7" path="res://assets/title_screen/sprite_titlescrean24.png" id="28_6na26"]
+[ext_resource type="Texture2D" uid="uid://cjscpuj3q3iq3" path="res://assets/title_screen/sprite_titlescrean26.png" id="29_s34bv"]
+[ext_resource type="Texture2D" uid="uid://bdhpxd704io5d" path="res://assets/title_screen/sprite_titlescrean27.png" id="30_qkhjk"]
+[ext_resource type="Texture2D" uid="uid://b2caya7pshead" path="res://assets/title_screen/sprite_titlescrean28.png" id="31_e8gyn"]
+[ext_resource type="Texture2D" uid="uid://cwamn3a0ck00h" path="res://assets/title_screen/sprite_titlescrean29.png" id="32_tmwp1"]
+[ext_resource type="Texture2D" uid="uid://c407v5n6snsr" path="res://assets/title_screen/sprite_titlescrean30.png" id="33_0fbm0"]
+[ext_resource type="Texture2D" uid="uid://qlsxcbmlffxy" path="res://assets/title_screen/sprite_titlescrean31.png" id="34_r8hq1"]
+[ext_resource type="FontFile" uid="uid://b1imu3mekdfmq" path="res://fonts/KidsBold.otf" id="35_xtrtc"]
+[ext_resource type="Theme" uid="uid://burrrtpd8blug" path="res://themes/default_btn.tres" id="36_504fj"]
+[ext_resource type="AudioStream" uid="uid://bbvfophq34uy1" path="res://sounds/rainloop.mp3" id="37_s41wy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c4oer"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6cmv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_754rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wdk44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g0i2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xnm86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_r0x2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kh3qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wqmbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hcb7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nq2br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hokst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4qqy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_x1kq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2edrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_l2wed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pu44n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_61mxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_28mvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_offek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mwvke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_spymq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_uekar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8df1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_412es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6na26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qf4ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_s34bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qkhjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_e8gyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_tmwp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0fbm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_r8hq1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_3wqmc"]
+resource_name = "game_explanation"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.9, 10, 20, 25.1, 35, 41),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Na pacata vila de Māwsynrām, um fenômeno peculiar ocorre: uma 
+chuva nunca cessa.
+Essa chuva moldou e alterou a vida de seus habitantes, que costumam 
+levar vidas simples e  gratificantes, apesar da chuva.", "Porém, esse fenômeno tende a se tornar mais 
+tempestuoso, de modo que os habitantes da vila não podem 
+estar fora de casa enquanto chove.", "Quem está fora de sua casa durante a tempestade, 
+desaparece e é dado como morto.", "Desde o início dos incidentes, foi definida uma regra
+entre os habitantes da vila, onde é proibido estar fora 
+de casa quando a chuva se intensificar", "Porém, Maya não obedeceu a única regra 
+de sua vila...", "Tudo por Rahul, seu pai"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("continue_button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(47.9, 50.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 2.6, 8.5, 10, 11, 18.2, 20, 20.7, 23.7, 25.1, 26.1, 33.1, 35, 36.4, 41, 43.6, 46.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_juq5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["abababababa "]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7xrb4"]
+_data = {
+"RESET": SubResource("Animation_juq5c"),
+"game_explanation": SubResource("Animation_3wqmc")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yqrcu")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.00095751
+scale = Vector2(1.00665, 0.941449)
+texture = ExtResource("2_qf4ha")
+script = ExtResource("3_xliop")
+sprites = SubResource("SpriteFrames_c4oer")
+frame_index = 25
+auto_play = true
+playing = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.784314)
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = -70.5
+offset_right = 275.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_xtrtc")
+text = "abababababa "
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7xrb4")
+}
+autoplay = "game_explanation"
+
+[node name="continue_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 311.0
+offset_right = 632.0
+offset_bottom = 340.0
+theme = ExtResource("36_504fj")
+text = "clique pra continuar"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_s41wy")
+autoplay = true
+
+[connection signal="pressed" from="continue_button" to="." method="_on_continue_button_pressed"]

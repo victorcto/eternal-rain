@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://br1r6c2syvjg1"]
+[gd_scene load_steps=62 format=3 uid="uid://br1r6c2syvjg1"]
 
 [ext_resource type="Texture2D" uid="uid://8q8ha8bl0lw6" path="res://assets/shop_anim/sprite_0.png" id="2_m7m6y"]
 [ext_resource type="Script" path="res://scripts/general.gd" id="2_o05if"]
@@ -31,6 +31,8 @@
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="28_otrdr"]
 [ext_resource type="Texture2D" uid="uid://cy6cqmgk6vbnc" path="res://assets/instrucoes/sprite_1-removebg-preview.png" id="29_f0y1y"]
 [ext_resource type="Script" path="res://scripts/trasition_level_1_2.gd" id="29_q0g7l"]
+[ext_resource type="Script" path="res://scripts/dialogo_prefeito.gd" id="32_5cxn8"]
+[ext_resource type="Script" path="res://scripts/dialogo_menino.gd" id="33_flxf2"]
 
 [sub_resource type="Animation" id="Animation_7pdtg"]
 resource_name = "tutorial"
@@ -7158,6 +7160,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v54uc"]
+size = Vector2(33, 32)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1uq0"]
 size = Vector2(117.5, 57)
 
@@ -7177,6 +7182,9 @@ shader_parameter/rain_color = Color(0.8, 0.8, 0.8, 0.490196)
 shader_parameter/base_rain_speed = 0.5
 shader_parameter/additional_rain_speed = 0.25
 shader_parameter/slant = 4.75e-08
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gfs7"]
+size = Vector2(33, 35)
 
 [node name="level-1" type="Node2D"]
 script = ExtResource("2_o05if")
@@ -7321,6 +7329,22 @@ scale = Vector2(0.796812, 0.746783)
 sprite_frames = SubResource("SpriteFrames_j8bqr")
 autoplay = "default"
 
+[node name="dialogo_prefeito" type="Node2D" parent="."]
+position = Vector2(1784, 206)
+script = ExtResource("32_5cxn8")
+
+[node name="textura" type="Sprite2D" parent="dialogo_prefeito"]
+visible = false
+position = Vector2(1, -27)
+texture = ExtResource("14_vhmkm")
+
+[node name="area_interacao" type="Area2D" parent="dialogo_prefeito"]
+position = Vector2(1, 1)
+
+[node name="colisao" type="CollisionShape2D" parent="dialogo_prefeito/area_interacao"]
+position = Vector2(-0.5, -6)
+shape = SubResource("RectangleShape2D_v54uc")
+
 [node name="Placa" type="Area2D" parent="."]
 script = ExtResource("27_308r4")
 
@@ -7390,10 +7414,10 @@ color = Color(1, 1, 1, 0)
 
 [node name="rain3" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_glm8h")
-offset_left = 1264.0
-offset_top = -15.0
-offset_right = 1887.0
-offset_bottom = 462.0
+offset_left = 1256.0
+offset_top = -11.0
+offset_right = 1879.0
+offset_bottom = 466.0
 color = Color(1, 1, 1, 0)
 
 [node name="rain4" type="ColorRect" parent="."]
@@ -7420,6 +7444,22 @@ offset_right = 3730.0
 offset_bottom = 454.0
 color = Color(1, 1, 1, 0)
 
+[node name="dialogo_menino" type="Node2D" parent="."]
+position = Vector2(2658, 203)
+script = ExtResource("33_flxf2")
+
+[node name="textura" type="Sprite2D" parent="dialogo_menino"]
+position = Vector2(1, -26)
+texture = ExtResource("14_vhmkm")
+
+[node name="area_interacao" type="Area2D" parent="dialogo_menino"]
+
+[node name="colisao" type="CollisionShape2D" parent="dialogo_menino/area_interacao"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_6gfs7")
+
+[connection signal="body_entered" from="dialogo_prefeito/area_interacao" to="dialogo_prefeito" method="_on_area_interacao_body_entered"]
+[connection signal="body_exited" from="dialogo_prefeito/area_interacao" to="dialogo_prefeito" method="_on_area_interacao_body_exited"]
 [connection signal="body_entered" from="Placa" to="Placa" method="_on_body_entered"]
 [connection signal="body_exited" from="Placa" to="Placa" method="_on_body_exited"]
 [connection signal="body_entered" from="Next_level" to="Next_level" method="_on_body_entered"]

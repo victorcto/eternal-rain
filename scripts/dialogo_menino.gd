@@ -4,10 +4,10 @@ extends Node2D
 @onready var area_interaction = $area_interacao
 
 const lines : Array[String] = [
-	"Bom dia Prefeito, Você viu meu pai? \n - Maya",
-	"Maya, não o vi. Você deve voltar para casa \n Está chegando uma tempestade - Prefeito",
-	"Mas meu e meu pai?!\n - Maya",
-	"Não se preucupe ele logo deve volta \n Vá para casa menina - Prefeito"
+	"Está procurando seu pai, Maya? \n -Aarav",
+	"Sim!!! Aarav, você o viu? -Maya",
+	"Ele passou em direção da floresta\n -Aarav",
+	"Obrigada Aarav!!! -Maya"
 ]
 
 var player_in_area = false
@@ -24,10 +24,10 @@ func _ready():
 func _process(delta):
 	if player_in_area and Input.is_action_pressed("Interaction"):
 		print("Jogador interagiu.")
-		if not DialogoManeagerPrefeito.is_message_active:
+		if not DialogoManeagerMenino.is_message_active:
 			print("Mostrando diálogo")
 			texture.hide()
-			DialogoManeagerPrefeito.start_message(global_position, lines)
+			DialogoManeagerMenino.start_message(global_position, lines)
 
 func _on_area_interacao_body_entered(body):
 	print("Corpo entrou na área: ", body.name)  # Mensagem de depuração
@@ -40,6 +40,6 @@ func _on_area_interacao_body_exited(body):
 	if body.name == "player":
 		texture.hide()
 		player_in_area = false
-		if DialogoManeagerPrefeito.dialog_box != null:
-			DialogoManeagerPrefeito.dialog_box.queue_free()
-			DialogoManeagerPrefeito.is_message_active = false
+		if DialogoManeagerMenino.dialog_box != null:
+			DialogoManeagerMenino.dialog_box.queue_free()
+			DialogoManeagerMenino.is_message_active = false

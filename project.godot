@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogManager="*res://singletons/dialog_manager.gd"
+DialogoManeagerPrefeito="*res://singletons/dialogo_maneager_prefeito.gd"
+DialogoManeagerMenino="*res://singletons/dialogo_maneager_menino.gd"
 
 [display]
 

@@ -1388,7 +1388,6 @@ stream = ExtResource("9_qstvk")
 
 [node name="redrain" parent="." instance=ExtResource("3_x7vgp")]
 position = Vector2(360, 104)
-scale = Vector2(1, 1)
 
 [node name="red_rain" parent="redrain" index="0"]
 position = Vector2(1472, -728)

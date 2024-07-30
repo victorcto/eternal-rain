@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cbyhj1o1ppgdd" path="res://assets/tilesets/oak_woods_tileset.png" id="1_6fwwx"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
 [ext_resource type="Texture2D" uid="uid://e5lcenurtuj4" path="res://assets/furniture/Wood_01-128x128.png" id="2_olvhp"]
-[ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="3_1rl2x"]
-[ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background1/background_layer_1.png" id="5_ddinc"]
-[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background1/background_layer_2.png" id="6_3fxcn"]
-[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background1/background_layer_3.png" id="7_fhjga"]
+[ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="3_1rl2x"
+
+[ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background_layer_1.png" id="5_ddinc"]
+[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background/background_layer_2.png" id="6_3fxcn"]
+[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background/background_layer_3.png" id="7_fhjga"]
+
 [ext_resource type="PackedScene" uid="uid://dbpq4txtknvup" path="res://prefabs/goal.tscn" id="8_c1t13"]
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="9_oj62v"]
 [ext_resource type="Script" path="res://scripts/scroll_area.gd" id="10_ebg1r"]

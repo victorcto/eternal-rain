@@ -1,24 +1,24 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbpq4txtknvup"]
 
 [ext_resource type="Script" path="res://scripts/goal.gd" id="1_dfcht"]
-[ext_resource type="Texture2D" uid="uid://dx8dgogalafgo" path="res://assets/furniture/Houses_-_reusable_game_assets-removebg-preview.png" id="1_rl6eq"]
+[ext_resource type="Texture2D" uid="uid://dcn3xcoat4v3f" path="res://assets/house_inside/House (Outside And Inside) Tileset.png" id="2_og3pc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lb5j7"]
-size = Vector2(37, 40)
+size = Vector2(26, 40)
 
 [node name="goal" type="Area2D"]
 collision_layer = 2
 script = ExtResource("1_dfcht")
 
 [node name="sprite" type="Sprite2D" parent="."]
-position = Vector2(0, -21)
-scale = Vector2(0.541667, 0.541667)
-texture = ExtResource("1_rl6eq")
+position = Vector2(4.26927, -25.0955)
+scale = Vector2(0.892772, 0.916181)
+texture = ExtResource("2_og3pc")
 region_enabled = true
-region_rect = Rect2(152, 212, 40, 72)
+region_rect = Rect2(32, 320, 33, 50)
 
 [node name="collision" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -21)
+position = Vector2(4, -23)
 shape = SubResource("RectangleShape2D_lb5j7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

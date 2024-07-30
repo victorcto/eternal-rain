@@ -1,12 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dv1on5d58g7uu"]
+[gd_scene load_steps=12 format=3 uid="uid://dv1on5d58g7uu"]
 
 [ext_resource type="Texture2D" uid="uid://bwwm5vstmyxpe" path="res://assets/character/entities/enemy_3_seen.png" id="1_5ujto"]
+[ext_resource type="Script" path="res://actors/female_enemy.gd" id="1_kyfo5"]
 [ext_resource type="Texture2D" uid="uid://b2xhsxgd8nvbo" path="res://assets/character/entities/enemy_3_walking.png" id="2_eoiay"]
 [ext_resource type="Texture2D" uid="uid://gpdkfna77lih" path="res://assets/character/entities/enemy_3_death.png" id="3_k68ve"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kom1o"]
-radius = 17.0
-height = 58.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifdhv"]
+size = Vector2(36, 52)
 
 [sub_resource type="Animation" id="Animation_nwsni"]
 length = 0.001
@@ -225,7 +225,11 @@ _data = {
 "walk & stop": SubResource("Animation_u8lkq")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvdpv"]
+size = Vector2(108, 48)
+
 [node name="female_enemy" type="CharacterBody2D"]
+script = ExtResource("1_kyfo5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_5ujto")
@@ -233,10 +237,24 @@ hframes = 4
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 9)
-shape = SubResource("CapsuleShape2D_kom1o")
+position = Vector2(-2, 6)
+shape = SubResource("RectangleShape2D_ifdhv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_t4f24")
 }
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, 20)
+target_position = Vector2(52, 0)
+collide_with_areas = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 4)
+shape = SubResource("RectangleShape2D_rvdpv")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

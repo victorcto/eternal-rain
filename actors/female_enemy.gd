@@ -11,7 +11,7 @@ func _physics_process(delta):
 	if(player_path and alive):
 		var player = get_node(player_path)
 		var direction = (player.position.x - position.x)
-		velocity.x = direction * 1.2
+		velocity.x = direction * 1.7
 		animations.play("const walk")
 		if(direction > 0):
 			sprite.flip_h =true

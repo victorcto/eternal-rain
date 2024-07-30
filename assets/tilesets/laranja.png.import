@@ -2,21 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coviyrhsn1ikk"
-
-path="res://.godot/imported/background_layer_1.png-0a51d901d8f27a00f89be99858770d2e.ctex"
-
+uid="uid://le7q77ao02b3"
+path="res://.godot/imported/laranja.png-76fded497d34bf40852af20b4bb04c5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-
-
-source_file="res://assets/background_layer_1.png"
-dest_files=["res://.godot/imported/background_layer_1.png-0a51d901d8f27a00f89be99858770d2e.ctex"]
-
+source_file="res://assets/tilesets/laranja.png"
+dest_files=["res://.godot/imported/laranja.png-76fded497d34bf40852af20b4bb04c5e.ctex"]
 
 [params]
 

@@ -1,0 +1,10 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://c2wl2yn51najg"]
+
+[resource]
+bus/0/volume_db = -10.5236
+bus/1/name = &"scare_sound"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 2.91142
+bus/1/send = &"Master"

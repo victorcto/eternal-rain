@@ -83,10 +83,12 @@ animation = &"jump"
 position = Vector2(0, 16)
 shape = SubResource("CapsuleShape2D_crblx")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = 0
-limit_top = 0
-limit_bottom = -10000000
-editor_draw_limits = true
-
 [node name="animator" type="AnimationPlayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -70)
+limit_left = 0
+limit_top = -47
+limit_right = 3640
+limit_bottom = 482
+editor_draw_limits = true

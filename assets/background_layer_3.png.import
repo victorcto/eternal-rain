@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbyhj1o1ppgdd"
-path="res://.godot/imported/oak_woods_tileset.png-ef307a4b80b7b2c790d963774fd87030.ctex"
+uid="uid://ca4nkwqrc33g4"
+path="res://.godot/imported/background_layer_3.png-e02d58b56486cd679328e767b5ebea61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/oak_woods_tileset.png"
-dest_files=["res://.godot/imported/oak_woods_tileset.png-ef307a4b80b7b2c790d963774fd87030.ctex"]
+source_file="res://assets/background1/background_layer_3.png"
+dest_files=["res://.godot/imported/background_layer_3.png-e02d58b56486cd679328e767b5ebea61.ctex"]
 
 [params]
 

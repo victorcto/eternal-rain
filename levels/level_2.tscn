@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://qy0mfa738o6d"]
+[gd_scene load_steps=18 format=3 uid="uid://qy0mfa738o6d"]
 
 [ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="1_i8p5c"]
 [ext_resource type="Texture2D" uid="uid://le7q77ao02b3" path="res://assets/tilesets/laranja.png" id="1_un8lx"]
 [ext_resource type="Texture2D" uid="uid://df70qu1b8fdcd" path="res://assets/background2/parallax-demon-woods-bg.png" id="2_bctgr"]
 [ext_resource type="Texture2D" uid="uid://drlqwtpvq6kmu" path="res://assets/background2/parallax-demon-woods-far-trees.png" id="3_wwkcu"]
+[ext_resource type="PackedScene" uid="uid://5kvk56mv4dhj" path="res://scenes/rain.tscn" id="3_x7vgp"]
 [ext_resource type="Texture2D" uid="uid://vdbym5sq5kgq" path="res://assets/background2/parallax-demon-woods-mid-trees.png" id="4_b0m0k"]
 [ext_resource type="Texture2D" uid="uid://cfmf86v0hj8r7" path="res://assets/background2/parallax-demon-woods-close-trees.png" id="5_e8w4y"]
 [ext_resource type="Texture2D" uid="uid://ds1bfq3dbrfa2" path="res://assets/decorations/sign.png" id="8_4i40k"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dbpq4txtknvup" path="res://prefabs/goal.tscn" id="9_olc4k"]
 [ext_resource type="AudioStream" uid="uid://dyalhrx871xff" path="res://assets/audio/female_jumpscare_sound.wav" id="9_qstvk"]
 [ext_resource type="AudioStream" uid="uid://bbvfophq34uy1" path="res://sounds/rainloop.mp3" id="10_yptpd"]
+[ext_resource type="Texture2D" uid="uid://bf074xbcs84a8" path="res://assets/particle/white_particle.png" id="13_1mg5p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7hk7e"]
 texture = ExtResource("1_un8lx")
@@ -1383,8 +1385,22 @@ autoplay = true
 
 [node name="scream" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_qstvk")
-bus = &"scare_sound"
+
+[node name="redrain" parent="." instance=ExtResource("3_x7vgp")]
+position = Vector2(360, 104)
+scale = Vector2(1, 1)
+
+[node name="red_rain" parent="redrain" index="0"]
+position = Vector2(1472, -728)
+rotation = 0.0
+amount = 5000
+texture = ExtResource("13_1mg5p")
+emission_rect_extents = Vector2(2000, 1)
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+color = Color(0.0171562, 0.200405, 0.345865, 0.615686)
 
 [connection signal="body_entered" from="spawn_trigger" to="spawn_trigger" method="_on_body_entered"]
 
 [editable path="goal"]
+[editable path="redrain"]

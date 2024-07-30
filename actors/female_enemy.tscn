@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dv1on5d58g7uu"]
 
 [ext_resource type="Texture2D" uid="uid://bwwm5vstmyxpe" path="res://assets/character/entities/enemy_3_seen.png" id="1_5ujto"]
-[ext_resource type="Script" path="res://actors/female_enemy.gd" id="1_kyfo5"]
+[ext_resource type="Script" path="res://scripts/female_enemy.gd" id="1_fabar"]
 [ext_resource type="Texture2D" uid="uid://b2xhsxgd8nvbo" path="res://assets/character/entities/enemy_3_walking.png" id="2_eoiay"]
 [ext_resource type="Texture2D" uid="uid://gpdkfna77lih" path="res://assets/character/entities/enemy_3_death.png" id="3_k68ve"]
 
@@ -228,7 +228,7 @@ _data = {
 size = Vector2(108, 48)
 
 [node name="female_enemy" type="CharacterBody2D"]
-script = ExtResource("1_kyfo5")
+script = ExtResource("1_fabar")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_5ujto")

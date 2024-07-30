@@ -6,12 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://cruxp1duqn7qh" path="res://assets/decorations/fence_1.png" id="2_rfvoa"]
 [ext_resource type="Texture2D" uid="uid://do2rbts7vk22f" path="res://assets/decorations/shop_anim.png" id="3_gt2lb"]
 [ext_resource type="Texture2D" uid="uid://ds1bfq3dbrfa2" path="res://assets/decorations/sign.png" id="7_6bd77"]
-
 [ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background_layer_1.png" id="8_glvwn"]
-[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background/background_layer_2.png" id="9_amj5m"]
-
+[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background_layer_2.png" id="9_amj5m"]
 [ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="9_l5ajy"]
-[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background1/background_layer_3.png" id="10_omfu2"]
+[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background_layer_3.png" id="10_omfu2"]
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="11_4cryv"]
 [ext_resource type="Texture2D" uid="uid://byqiw7pv54s5w" path="res://assets/decorations/TX Village Props.png" id="11_r30m6"]
 [ext_resource type="Script" path="res://scripts/warning.gd" id="13_t5ns7"]

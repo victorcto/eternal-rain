@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export_node_path("CharacterBody2D") var player_path = null 
+var player_path = null 
 @onready var raycast = $RayCast2D
 @onready var animations = $AnimationPlayer
 @onready var sprite = $Sprite2D

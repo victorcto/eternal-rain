@@ -167,7 +167,6 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="Animation_u8lkq"]
 resource_name = "walk & stop"
 length = 2.5
-loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

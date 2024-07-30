@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dpevyv4vx3rca"]
+[gd_scene load_steps=11 format=3 uid="uid://d1lrtdso7xtd5"]
 
 [ext_resource type="Texture2D" uid="uid://ce24q55g206x6" path="res://assets/background3/tileset.png" id="1_e06no"]
 [ext_resource type="Texture2D" uid="uid://c476pt8ntqure" path="res://assets/background3/vegetation.png" id="2_oscf8"]
@@ -184,6 +184,14 @@ centered = false
 
 [node name="player" parent="." instance=ExtResource("4_73dgh")]
 position = Vector2(15, -112)
+
+[node name="Camera2D2" type="Camera2D" parent="player"]
+zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = -240
+limit_right = 655
+limit_bottom = -60
+editor_draw_limits = true
 
 [node name="monster_enemy" parent="." instance=ExtResource("5_nndb8")]
 position = Vector2(555, -112)

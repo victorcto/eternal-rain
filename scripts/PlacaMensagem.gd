@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var mensagem = $mensage  # Referência para o nó da label
-@onready var area_interaction = $Placa
+@onready var area_interaction = $colision
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

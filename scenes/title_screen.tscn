@@ -194,10 +194,10 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.00095751
 scale = Vector2(1.00665, 0.941449)
-texture = ExtResource("31_ao2yb")
+texture = ExtResource("7_6oyx3")
 script = ExtResource("1_wpest")
 sprites = SubResource("SpriteFrames_vx4ox")
-frame_index = 29
+frame_index = 4
 auto_play = true
 playing = true
 

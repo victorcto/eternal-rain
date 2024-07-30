@@ -1,13 +1,13 @@
 [gd_scene load_steps=20 format=3 uid="uid://cgquhqbfya1vk"]
 
-[ext_resource type="Texture2D" uid="uid://cbyhj1o1ppgdd" path="res://assets/oak_woods_tileset.png" id="1_6fwwx"]
+[ext_resource type="Texture2D" path="res://assets/oak_woods_tileset.png" id="1_6fwwx"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
-[ext_resource type="Texture2D" path="res://assets/furniture/Wood_01-128x128.png" id="2_olvhp"]
+[ext_resource type="Texture2D" uid="uid://e5lcenurtuj4" path="res://assets/furniture/Wood_01-128x128.png" id="2_olvhp"]
 [ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="3_1rl2x"]
-[ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background/background_layer_1.png" id="5_ddinc"]
-[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background/background_layer_2.png" id="6_3fxcn"]
-[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background/background_layer_3.png" id="7_fhjga"]
-[ext_resource type="PackedScene" path="res://prefabs/goal.tscn" id="8_c1t13"]
+[ext_resource type="Texture2D" uid="uid://coviyrhsn1ikk" path="res://assets/background1/background_layer_1.png" id="5_ddinc"]
+[ext_resource type="Texture2D" uid="uid://bmdfxjutrpvxx" path="res://assets/background1/background_layer_2.png" id="6_3fxcn"]
+[ext_resource type="Texture2D" uid="uid://ca4nkwqrc33g4" path="res://assets/background1/background_layer_3.png" id="7_fhjga"]
+[ext_resource type="PackedScene" uid="uid://dbpq4txtknvup" path="res://prefabs/goal.tscn" id="8_c1t13"]
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="9_oj62v"]
 [ext_resource type="Script" path="res://scripts/scroll_area.gd" id="10_ebg1r"]
 [ext_resource type="Texture2D" uid="uid://b2qxap8388aaj" path="res://assets/ui/expression_alerted.png" id="11_8cthn"]
@@ -8757,7 +8757,7 @@ shader_parameter/slant = 4.75e-08
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_232y4"]
 size = Vector2(39, 27)
 
-[node name="World-01" type="Node2D"]
+[node name="level-0" type="Node2D"]
 
 [node name="level" type="TileMap" parent="."]
 position = Vector2(-35, 105)

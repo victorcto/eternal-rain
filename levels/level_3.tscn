@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cxkxou0npd05x" path="res://actors/monster_enemy.tscn" id="5_nndb8"]
 [ext_resource type="AudioStream" uid="uid://dsehbi4mp8og6" path="res://sounds/cave.wav" id="6_7ramy"]
 [ext_resource type="AudioStream" uid="uid://darsxxrr55myx" path="res://sounds/water_drop.mp3" id="7_fdl6x"]
-[ext_resource type="Script" path="res://levels/bait_pai_lvl3.gd" id="8_itwwo"]
+[ext_resource type="Script" path="res://scripts/bait_pai_lvl3.gd" id="8_itwwo"]
 [ext_resource type="Texture2D" uid="uid://ct3rsf4c78tr3" path="res://assets/Noticias/level3-dialogo.png" id="9_oqivd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3i4kh"]
@@ -262,8 +262,8 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="ColorRect" type="ColorRect" parent="."]
-modulate = Color(1, 1, 1, 0)
-offset_left = 1.0
+modulate = Color(1, 1, 1, 0.869565)
+offset_left = -4.0
 offset_top = -263.0
 offset_right = 756.0
 offset_bottom = -47.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cgquhqbfya1vk"]
+[gd_scene load_steps=27 format=3 uid="uid://cgquhqbfya1vk"]
 
 [ext_resource type="Texture2D" uid="uid://cj0tpndhucr01" path="res://assets/16x16 Fantasy Platformer Pack/Tilesets/House (Outside And Inside) Tileset.png" id="1_7pd13"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://d4f0hcxfqlk2v" path="res://assets/Noticias/sprite_1-removebg-preview.png" id="11_ioaul"]
 [ext_resource type="Texture2D" uid="uid://cxsoepkiispby" path="res://assets/Noticias/sprite_2-removebg-preview.png" id="12_mv8vv"]
 [ext_resource type="AudioStream" uid="uid://4w8latnhsc0f" path="res://sounds/village-theme.mp3" id="12_n0mul"]
+[ext_resource type="AudioStream" uid="uid://cdrppn6k75gks" path="res://sounds/noticias tv.mp3" id="14_qknyc"]
+[ext_resource type="AudioStream" uid="uid://dyvhkvqfgvgpn" path="res://sounds/rain_inside_house.mp3" id="15_1jlpm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ipes"]
 texture = ExtResource("1_7pd13")
@@ -23726,7 +23728,7 @@ sprite_frames = SubResource("SpriteFrames_w3f2v")
 autoplay = "default"
 frame_progress = 0.8018
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="bg_music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_n0mul")
 autoplay = true
 
@@ -23746,6 +23748,15 @@ libraries = {
 "": SubResource("AnimationLibrary_nvny4")
 }
 autoplay = "new_animation"
+
+[node name="tv" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_qknyc")
+volume_db = -2.811
+autoplay = true
+
+[node name="rain_house" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_1jlpm")
+autoplay = true
 
 [connection signal="body_entered" from="scroll_area" to="scroll_area" method="_on_body_entered"]
 [connection signal="body_exited" from="scroll_area" to="scroll_area" method="_on_body_exited"]

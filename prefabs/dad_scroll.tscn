@@ -240,13 +240,12 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_colors/font_color = Color(0.380372, 0, 0, 1)
-text = "Hi, Maya! 
-Congratulations for your birthday! 
-Sorry for isn't  with you 
-in this moment, i just leave to do
- some important stuff 
-be right back soon!!!
-"
+text = "Olá, Maya! 
+Parabéns pelo seu aniversário! 
+Desculpe por não estar com você 
+neste momento, sai para fazer
+algumas coisas importantes 
+volto logo!!!"
 clip_text = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="dad_scroll"]

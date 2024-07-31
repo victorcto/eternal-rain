@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdrppn6k75gks"
+path="res://.godot/imported/noticias tv.mp3-bde0126c80c8470168508777c8c4f47f.mp3str"
+
+[deps]
+
+source_file="res://sounds/noticias tv.mp3"
+dest_files=["res://.godot/imported/noticias tv.mp3-bde0126c80c8470168508777c8c4f47f.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

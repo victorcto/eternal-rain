@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy6cqmgk6vbnc"
-path="res://.godot/imported/sprite_1-removebg-preview.png-7eb8f0d33db50fd33b9aeb31759bff3b.ctex"
+uid="uid://cx46d34sxme7p"
+path="res://.godot/imported/tutorial-lvl1.png-d4d64155241fec585463aa081f388510.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/instrucoes/sprite_1-removebg-preview.png"
-dest_files=["res://.godot/imported/sprite_1-removebg-preview.png-7eb8f0d33db50fd33b9aeb31759bff3b.ctex"]
+source_file="res://assets/instrucoes/tutorial-lvl1.png"
+dest_files=["res://.godot/imported/tutorial-lvl1.png-d4d64155241fec585463aa081f388510.ctex"]
 
 [params]
 

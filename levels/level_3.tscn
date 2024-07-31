@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dpevyv4vx3rca"]
+[gd_scene load_steps=15 format=3 uid="uid://dpevyv4vx3rca"]
 
 [ext_resource type="Texture2D" uid="uid://ce24q55g206x6" path="res://assets/background3/tileset.png" id="1_e06no"]
 [ext_resource type="Texture2D" uid="uid://c476pt8ntqure" path="res://assets/background3/vegetation.png" id="2_oscf8"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cxkxou0npd05x" path="res://actors/monster_enemy.tscn" id="5_nndb8"]
 [ext_resource type="AudioStream" uid="uid://dsehbi4mp8og6" path="res://sounds/cave.wav" id="6_7ramy"]
 [ext_resource type="AudioStream" uid="uid://darsxxrr55myx" path="res://sounds/water_drop.mp3" id="7_fdl6x"]
+[ext_resource type="Script" path="res://levels/bait_pai_lvl3.gd" id="8_itwwo"]
+[ext_resource type="Texture2D" uid="uid://ct3rsf4c78tr3" path="res://assets/Noticias/level3-dialogo.png" id="9_oqivd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3i4kh"]
 texture = ExtResource("1_e06no")
@@ -163,6 +165,9 @@ sources/1 = SubResource("TileSetAtlasSource_m4gk2")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p42xp"]
 size = Vector2(46, 212)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s87fn"]
+size = Vector2(94, 153.75)
+
 [node name="level3" type="Node2D"]
 
 [node name="map3" type="TileMap" parent="."]
@@ -211,3 +216,19 @@ bus = &"scare_sound"
 stream = ExtResource("7_fdl6x")
 volume_db = 5.943
 autoplay = true
+
+[node name="bait_pai" type="Area2D" parent="."]
+position = Vector2(310, -145)
+script = ExtResource("8_itwwo")
+
+[node name="colisao" type="CollisionShape2D" parent="bait_pai"]
+position = Vector2(36, -7.125)
+shape = SubResource("RectangleShape2D_s87fn")
+
+[node name="caixa_dialogo" type="Sprite2D" parent="bait_pai"]
+position = Vector2(111, 22)
+scale = Vector2(0.359, 0.381)
+texture = ExtResource("9_oqivd")
+
+[connection signal="body_entered" from="bait_pai" to="bait_pai" method="_on_body_entered"]
+[connection signal="body_exited" from="bait_pai" to="bait_pai" method="_on_body_exited"]

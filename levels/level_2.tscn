@@ -1290,6 +1290,14 @@ layer_0/tile_data = PackedInt32Array(1114112, 458752, 4, 1179648, 458752, 5, 124
 [node name="player" parent="." instance=ExtResource("1_i8p5c")]
 position = Vector2(16, 288)
 
+[node name="Camera2D2" type="Camera2D" parent="player"]
+position = Vector2(0, -70)
+limit_left = 0
+limit_top = -47
+limit_right = 3640
+limit_bottom = 482
+editor_draw_limits = true
+
 [node name="bg" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="bg"]
@@ -1371,7 +1379,6 @@ shape = SubResource("RectangleShape2D_6fn4t")
 
 [node name="goal" parent="." instance=ExtResource("9_olc4k")]
 position = Vector2(3616, 256)
-next_level = "res://levels/level_3.tscn"
 
 [node name="sprite" parent="goal" index="0"]
 visible = false

@@ -1,22 +1,11 @@
 extends Area2D
 
 @onready var texture = $warning_icon
-# Called when the node enters the scene tree for the first time.
+@onready var player_camera = null  # Referência para a câmera do jogador
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_body_entered(body):
-	pass # Replace with function body.
-
-
-func _on_body_exited(body):
-	pass # Replace with function body.
+	# Encontrar a câmera do jogador (ajuste o caminho conforme necessário)
+	player_camera = get_tree().current_scene.get_node("player/Camera2D2")
 
 func _unhandled_input(event):
 	if get_overlapping_bodies().size() > 0:
@@ -25,7 +14,9 @@ func _unhandled_input(event):
 			texture.hide()
 			var scene = preload("res://prefabs/dad_scroll.tscn").instantiate()
 			get_tree().current_scene.add_child(scene)
+			if player_camera:
+				player_camera.enabled = false  # Desativa a câmera
+		
 			queue_free()
 	else:
 		texture.hide()
-		

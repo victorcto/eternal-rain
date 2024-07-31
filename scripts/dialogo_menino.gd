@@ -4,10 +4,12 @@ extends Node2D
 @onready var area_interaction = $area_interacao
 
 const lines : Array[String] = [
-	"Está procurando seu pai, Maya? \n -Aarav",
-	"Sim!!! Aarav, você o viu? -Maya",
+	"Está procurando seu pai, Maya? \n-Aarav",
+	"Sim, Aarav!!! \n-Maya",
+	"Estou super preocupada, ele saiu faz muito tempo... \n-Maya",
+	"Você o viu? \n-Maya",
 	"Ele passou em direção da floresta\n -Aarav",
-	"Obrigada Aarav!!! -Maya"
+	"Obrigada, Aarav!!! -Maya"
 ]
 
 var player_in_area = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c0vw3l4oebwiy"]
+[gd_scene load_steps=25 format=3 uid="uid://cgquhqbfya1vk"]
 
 [ext_resource type="Texture2D" uid="uid://cj0tpndhucr01" path="res://assets/16x16 Fantasy Platformer Pack/Tilesets/House (Outside And Inside) Tileset.png" id="1_7pd13"]
 [ext_resource type="Texture2D" uid="uid://o4p7ve57e43r" path="res://assets/furniture/resized_with_reference_CatumetGamesFurniture.png" id="2_dk1bv"]

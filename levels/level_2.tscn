@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://qy0mfa738o6d"]
+[gd_scene load_steps=19 format=3 uid="uid://qy0mfa738o6d"]
 
 [ext_resource type="PackedScene" uid="uid://cojstxv1wf8g" path="res://actors/player.tscn" id="1_i8p5c"]
 [ext_resource type="Texture2D" uid="uid://le7q77ao02b3" path="res://assets/tilesets/laranja.png" id="1_un8lx"]
@@ -9,10 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://cfmf86v0hj8r7" path="res://assets/background2/parallax-demon-woods-close-trees.png" id="5_e8w4y"]
 [ext_resource type="Texture2D" uid="uid://ds1bfq3dbrfa2" path="res://assets/decorations/sign.png" id="8_4i40k"]
 [ext_resource type="Script" path="res://scripts/spawn_female_enemy.gd" id="8_txnid"]
-[ext_resource type="PackedScene" uid="uid://dbpq4txtknvup" path="res://prefabs/goal.tscn" id="9_olc4k"]
 [ext_resource type="AudioStream" uid="uid://dyalhrx871xff" path="res://assets/audio/female_jumpscare_sound.wav" id="9_qstvk"]
 [ext_resource type="AudioStream" uid="uid://bbvfophq34uy1" path="res://sounds/rainloop.mp3" id="10_yptpd"]
 [ext_resource type="Texture2D" uid="uid://bf074xbcs84a8" path="res://assets/particle/white_particle.png" id="13_1mg5p"]
+[ext_resource type="Script" path="res://scripts/trasition_level_2_3.gd" id="13_wvull"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7hk7e"]
 texture = ExtResource("1_un8lx")
@@ -1279,6 +1279,9 @@ size = Vector2(40, 528)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6fn4t"]
 size = Vector2(58, 192)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwpuf"]
+size = Vector2(38.5, 146.5)
+
 [node name="level-2" type="Node2D"]
 
 [node name="level2" type="TileMap" parent="."]
@@ -1377,15 +1380,6 @@ metadata/_edit_group_ = true
 position = Vector2(19, -48)
 shape = SubResource("RectangleShape2D_6fn4t")
 
-[node name="goal" parent="." instance=ExtResource("9_olc4k")]
-position = Vector2(3616, 256)
-
-[node name="sprite" parent="goal" index="0"]
-visible = false
-
-[node name="collision" parent="goal" index="1"]
-position = Vector2(0, -32.5)
-
 [node name="rain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_yptpd")
 autoplay = true
@@ -1406,7 +1400,17 @@ scale_amount_min = 0.1
 scale_amount_max = 0.2
 color = Color(0.0171562, 0.200405, 0.345865, 0.615686)
 
-[connection signal="body_entered" from="spawn_trigger" to="spawn_trigger" method="_on_body_entered"]
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(3592, 176)
+script = ExtResource("13_wvull")
+metadata/_edit_group_ = true
 
-[editable path="goal"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(32.75, 6.75)
+shape = SubResource("RectangleShape2D_lwpuf")
+
+[connection signal="body_entered" from="spawn_trigger" to="spawn_trigger" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+
 [editable path="redrain"]

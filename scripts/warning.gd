@@ -4,9 +4,10 @@ extends Node2D
 @onready var area_interaction = $area_interaction
 
 const lines : Array[String] = [
-	"Bom dia Maya, o que vai querer hoje? \n - Ravi",
-	"Olá, Sr. Ravi. Não encontro meu pai. O senhor viu ele? \n - Maya",
-	"Desculpa, não o vi... \n - Ravi"
+	"Bom dia Maya, o que vai querer hoje? \n- Ravi",
+	"Olá, Sr. Ravi. Não encontro meu pai\n - Maya",
+	"O senhor o viu? \n- Maya",
+	"Desculpa, não o vi... \n- Ravi"
 ]
 
 func _unhandled_input(event):

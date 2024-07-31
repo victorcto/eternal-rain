@@ -63,7 +63,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.221498, 0.168966, 0.514556, 1)
 theme_override_fonts/font = ExtResource("2_dxegh")
 theme_override_font_sizes/font_size = 32
-text = "Controls"
+text = "Controles"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -75,10 +75,10 @@ theme_override_constants/margin_top = 15
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_dxegh")
 theme_override_font_sizes/font_size = 32
-text = "Walk left: A
-Walk right: D 
-Interact: E
-To jump: Space"
+text = "Andar: Setas Direita e Esquerda 
+Interagir: E
+Pular: Barra de Espaço
+Correr: Shift"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -89,7 +89,7 @@ theme_override_constants/margin_top = 50
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_1igtn")
-text = "Return"
+text = "Voltar"
 
 [node name="bg_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_2kr11")

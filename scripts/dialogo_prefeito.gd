@@ -4,10 +4,13 @@ extends Node2D
 @onready var area_interaction = $area_interacao
 
 const lines : Array[String] = [
-	"Bom dia Prefeito, Você viu meu pai? \n - Maya",
-	"Maya, não o vi. Você deve voltar para casa \n Está chegando uma tempestade - Prefeito",
-	"Mas meu e meu pai?!\n - Maya",
-	"Não se preucupe ele logo deve volta \n Vá para casa menina - Prefeito"
+	"Bom dia, prefeito\n - Maya", 
+	"você viu meu pai? \n- Maya",
+	"Não o vi, Maya, mas você deveria voltar para casa \n- Prefeito",
+	"Está chegando uma tempestade \n- Prefeito",
+	"Mas e meu pai?!\n- Maya",
+	"Não se preocupe, ele logo deve voltar \n- Prefeito",
+	"Vá para casa, Maya \n- Prefeito"
 ]
 
 var player_in_area = false

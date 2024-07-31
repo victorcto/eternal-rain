@@ -1,6 +1,4 @@
-
 [gd_scene load_steps=62 format=3 uid="uid://br1r6c2syvjg1"]
-
 
 [ext_resource type="Texture2D" uid="uid://8q8ha8bl0lw6" path="res://assets/shop_anim/sprite_0.png" id="2_m7m6y"]
 [ext_resource type="Script" path="res://scripts/general.gd" id="2_o05if"]

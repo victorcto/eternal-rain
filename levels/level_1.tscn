@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://br1r6c2syvjg1"]
+[gd_scene load_steps=64 format=3 uid="uid://br1r6c2syvjg1"]
 
 [ext_resource type="Texture2D" uid="uid://8q8ha8bl0lw6" path="res://assets/shop_anim/sprite_0.png" id="2_m7m6y"]
 [ext_resource type="Script" path="res://scripts/general.gd" id="2_o05if"]
@@ -33,6 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://cx46d34sxme7p" path="res://assets/instrucoes/tutorial-lvl1.png" id="29_u27qw"]
 [ext_resource type="Script" path="res://scripts/dialogo_prefeito.gd" id="32_5cxn8"]
 [ext_resource type="Script" path="res://scripts/dialogo_menino.gd" id="33_flxf2"]
+[ext_resource type="AudioStream" uid="uid://4w8latnhsc0f" path="res://sounds/village-theme.mp3" id="34_5c7cw"]
+[ext_resource type="AudioStream" uid="uid://cftwaljjx16ji" path="res://sounds/rain_extern.mp3" id="34_tjhpl"]
 
 [sub_resource type="Animation" id="Animation_7pdtg"]
 resource_name = "tutorial"
@@ -44,10 +46,22 @@ tracks/0/path = NodePath("Tutorial:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.8, 2, 10.3, 11.6),
+"times": PackedFloat32Array(3.1, 5, 16.7, 18.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.4, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b2crt"]
@@ -7372,6 +7386,7 @@ scale = Vector2(0.5715, 0.54)
 texture = ExtResource("27_2v2o6")
 
 [node name="Tutorial" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(136, 176)
 scale = Vector2(0.692, 0.716)
 texture = ExtResource("29_u27qw")
@@ -7448,6 +7463,7 @@ position = Vector2(2658, 203)
 script = ExtResource("33_flxf2")
 
 [node name="textura" type="Sprite2D" parent="dialogo_menino"]
+visible = false
 position = Vector2(1, -26)
 texture = ExtResource("14_vhmkm")
 
@@ -7456,6 +7472,23 @@ texture = ExtResource("14_vhmkm")
 [node name="colisao" type="CollisionShape2D" parent="dialogo_menino/area_interacao"]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_6gfs7")
+
+[node name="bg_rain" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_tjhpl")
+volume_db = -5.748
+autoplay = true
+max_distance = 4000.0
+
+[node name="bg_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_5c7cw")
+autoplay = true
+max_distance = 4000.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0.909091)
+offset_right = 3944.0
+offset_bottom = 496.0
+color = Color(0, 0, 0, 1)
 
 [connection signal="body_entered" from="dialogo_prefeito/area_interacao" to="dialogo_prefeito" method="_on_area_interacao_body_entered"]
 [connection signal="body_exited" from="dialogo_prefeito/area_interacao" to="dialogo_prefeito" method="_on_area_interacao_body_exited"]

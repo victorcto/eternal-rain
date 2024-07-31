@@ -1,0 +1,275 @@
+[gd_scene load_steps=41 format=3 uid="uid://baxleumkf62qm"]
+
+[ext_resource type="Script" path="res://scripts/cena_inicial.gd" id="1_6gs58"]
+[ext_resource type="Texture2D" uid="uid://clrg04con7yc7" path="res://assets/title_screen/sprite_titlescrean06.png" id="2_otvdh"]
+[ext_resource type="Script" path="res://scripts/Animatedbg.gd" id="3_8ec0x"]
+[ext_resource type="Texture2D" uid="uid://bxhrornm7jh6r" path="res://assets/title_screen/sprite_titlescrean00.png" id="4_0f44g"]
+[ext_resource type="Texture2D" uid="uid://1u2fouqpf8eq" path="res://assets/title_screen/sprite_titlescrean01.png" id="5_hlpv1"]
+[ext_resource type="Texture2D" uid="uid://cg4u71c3jy8q2" path="res://assets/title_screen/sprite_titlescrean02.png" id="6_md0ta"]
+[ext_resource type="Texture2D" uid="uid://dpfqfa657iafl" path="res://assets/title_screen/sprite_titlescrean03.png" id="7_2gicd"]
+[ext_resource type="Texture2D" uid="uid://deqgyajyw7wgu" path="res://assets/title_screen/sprite_titlescrean04.png" id="8_2pjct"]
+[ext_resource type="Texture2D" uid="uid://ctb4j3k0qy7br" path="res://assets/title_screen/sprite_titlescrean05.png" id="9_wg50x"]
+[ext_resource type="Texture2D" uid="uid://178yw03feg34" path="res://assets/title_screen/sprite_titlescrean07.png" id="10_4w7tl"]
+[ext_resource type="Texture2D" uid="uid://dwphy18jfbx2g" path="res://assets/title_screen/sprite_titlescrean08.png" id="11_nrbfv"]
+[ext_resource type="Texture2D" uid="uid://d18wuom3520ye" path="res://assets/title_screen/sprite_titlescrean09.png" id="12_6q76y"]
+[ext_resource type="Texture2D" uid="uid://ufeo8dy7w1o" path="res://assets/title_screen/sprite_titlescrean10.png" id="13_1au3s"]
+[ext_resource type="Texture2D" uid="uid://cm2yfnp2epni4" path="res://assets/title_screen/sprite_titlescrean11.png" id="14_03gys"]
+[ext_resource type="Texture2D" uid="uid://cdctiir72s1x2" path="res://assets/title_screen/sprite_titlescrean12.png" id="15_r3bwx"]
+[ext_resource type="Texture2D" uid="uid://dh21byv5tg4xt" path="res://assets/title_screen/sprite_titlescrean13.png" id="16_droc1"]
+[ext_resource type="Texture2D" uid="uid://c4bn013uc127k" path="res://assets/title_screen/sprite_titlescrean14.png" id="17_kgj7n"]
+[ext_resource type="Texture2D" uid="uid://byxy7hnlmy7de" path="res://assets/title_screen/sprite_titlescrean15.png" id="18_nkxtt"]
+[ext_resource type="Texture2D" uid="uid://daamdhqerrjt2" path="res://assets/title_screen/sprite_titlescrean16.png" id="19_r8tjr"]
+[ext_resource type="Texture2D" uid="uid://qt48cjl8lg2e" path="res://assets/title_screen/sprite_titlescrean17.png" id="20_xubst"]
+[ext_resource type="Texture2D" uid="uid://c8jvmoiffqdni" path="res://assets/title_screen/sprite_titlescrean18.png" id="21_24d2q"]
+[ext_resource type="Texture2D" uid="uid://dxe5o26yde12m" path="res://assets/title_screen/sprite_titlescrean19.png" id="22_xl0o0"]
+[ext_resource type="Texture2D" uid="uid://btcyotpi32154" path="res://assets/title_screen/sprite_titlescrean20.png" id="23_ggk7q"]
+[ext_resource type="Texture2D" uid="uid://dnbiqmi86hrvw" path="res://assets/title_screen/sprite_titlescrean21.png" id="24_r28pw"]
+[ext_resource type="Texture2D" uid="uid://dnd1id5k6pi5c" path="res://assets/title_screen/sprite_titlescrean22.png" id="25_2k66a"]
+[ext_resource type="Texture2D" uid="uid://blnxu27ke5s8n" path="res://assets/title_screen/sprite_titlescrean23.png" id="26_x6nra"]
+[ext_resource type="Texture2D" uid="uid://dkqckbmlssiq7" path="res://assets/title_screen/sprite_titlescrean24.png" id="27_75n1k"]
+[ext_resource type="Texture2D" uid="uid://ctqnasyr1tfq" path="res://assets/title_screen/sprite_titlescrean25.png" id="28_mr8ou"]
+[ext_resource type="Texture2D" uid="uid://cjscpuj3q3iq3" path="res://assets/title_screen/sprite_titlescrean26.png" id="29_82p3y"]
+[ext_resource type="Texture2D" uid="uid://bdhpxd704io5d" path="res://assets/title_screen/sprite_titlescrean27.png" id="30_0lb04"]
+[ext_resource type="Texture2D" uid="uid://b2caya7pshead" path="res://assets/title_screen/sprite_titlescrean28.png" id="31_nqwka"]
+[ext_resource type="Texture2D" uid="uid://cwamn3a0ck00h" path="res://assets/title_screen/sprite_titlescrean29.png" id="32_os5d6"]
+[ext_resource type="Texture2D" uid="uid://c407v5n6snsr" path="res://assets/title_screen/sprite_titlescrean30.png" id="33_p7265"]
+[ext_resource type="Texture2D" uid="uid://qlsxcbmlffxy" path="res://assets/title_screen/sprite_titlescrean31.png" id="34_343s2"]
+[ext_resource type="FontFile" uid="uid://b1imu3mekdfmq" path="res://fonts/KidsBold.otf" id="35_c564c"]
+[ext_resource type="Theme" uid="uid://burrrtpd8blug" path="res://themes/default_btn.tres" id="36_uhq80"]
+[ext_resource type="AudioStream" uid="uid://bbvfophq34uy1" path="res://sounds/rainloop.mp3" id="37_s5v46"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c4oer"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0f44g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hlpv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_md0ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2gicd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2pjct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wg50x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_otvdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4w7tl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nrbfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6q76y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1au3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_03gys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_r3bwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_droc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kgj7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_nkxtt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_r8tjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xubst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_24d2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xl0o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ggk7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_r28pw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2k66a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_x6nra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_75n1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mr8ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_82p3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0lb04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nqwka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_os5d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_p7265")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_343s2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_xa4ki"]
+resource_name = "new_animation"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 5.3, 10.8, 16.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["Mesmo após os vários avisos, Maya decidiu sair da vila em busca de seu pai. ", "Nunca antes havia saído sozinha, mas a ideia de deixá-lo sozinho não lhe parecia uma opção.", "Muitas horas se passaram sem que houvesse qualquer sinal de Rahul.", "A chuva começava a intensificar-se, e a noite se aproximava, tornando a floresta cada vez mais densa..."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1.3, 4.3, 5.3, 6.2, 10, 10.8, 12.1, 14.9, 16.1, 17.7, 22.8, 25.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(25.7, 30.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_awrn7"]
+_data = {
+"new_animation": SubResource("Animation_xa4ki")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6gs58")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.00095751
+scale = Vector2(1.00665, 0.941449)
+texture = ExtResource("34_343s2")
+script = ExtResource("3_8ec0x")
+sprites = SubResource("SpriteFrames_c4oer")
+frame_index = 31
+auto_play = true
+playing = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.784314)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_s5v46")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_awrn7")
+}
+autoplay = "new_animation"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 144.0
+offset_right = 624.0
+offset_bottom = 209.0
+theme_override_fonts/font = ExtResource("35_c564c")
+theme_override_font_sizes/font_size = 29
+text = "Mesmo após os vários avisos, Maya decidiu sair da vila em busca de seu pai. "
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 488.0
+offset_top = 312.0
+offset_right = 618.0
+offset_bottom = 341.0
+theme = ExtResource("36_uhq80")
+text = "Prosseguir"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

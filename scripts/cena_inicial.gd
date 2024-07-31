@@ -11,5 +11,9 @@ func _process(delta):
 	pass
 
 
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://levels/level_2.tscn")	
+
+
 func _on_continue_button_pressed():
 	get_tree().change_scene_to_file("res://levels/level_0.tscn")	

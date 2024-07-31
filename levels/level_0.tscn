@@ -23658,10 +23658,22 @@ tracks/0/path = NodePath("Tutorial:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1.3, 3.4, 8.4, 9.8),
+"times": PackedFloat32Array(3.1, 5.3, 11.2, 13.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1.23114),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.8, 4.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nvny4"]
@@ -23706,6 +23718,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("11_8cthn")
 
 [node name="Tutorial" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(58, 303)
 scale = Vector2(0.381083, 0.387395)
 texture = ExtResource("10_byj8q")
@@ -23757,6 +23770,11 @@ autoplay = true
 [node name="rain_house" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_1jlpm")
 autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 764.0
+offset_bottom = 375.0
+color = Color(0, 0, 0, 1)
 
 [connection signal="body_entered" from="scroll_area" to="scroll_area" method="_on_body_entered"]
 [connection signal="body_exited" from="scroll_area" to="scroll_area" method="_on_body_exited"]

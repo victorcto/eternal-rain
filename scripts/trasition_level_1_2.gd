@@ -1,7 +1,7 @@
 extends Area2D
 
 # Defina diretamente o caminho da próxima cena.
-const NEXT_LEVEL_PATH : String = "res://levels/level_2.tscn"
+const NEXT_LEVEL_PATH : String = "res://scenes/cena_trasicao_lvl_1-2.tscn"
 
 # Função chamada quando um corpo entra na área.
 func _on_body_entered(body):
